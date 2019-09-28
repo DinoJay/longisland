@@ -1,22 +1,97 @@
-.App {
-  text-align: center;
+svg {
+    font: 10px sans-serif
 }
 
-.App-logo {
-  height: 40vmin;
+.axis path,.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+    shape-rendering: crispEdges
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#viz-clever-counties .states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round
 }
 
-.App-link {
-  color: #09d3ac;
+#viz-clever-counties .counties path {
+    fill: steelblue;
+    stroke: #fff;
+    stroke-width: .2px
+}
+
+#viz-clever-counties .counties path:hover {
+    stroke-width: 1.5px;
+    stroke: red;
+    cursor: pointer
+}
+
+#viz-nyc svg {
+    border: 1px solid #ddd;
+    border-radius: 4px
+}
+
+#viz-nyc path {
+    fill: none;
+    stroke: #aaa;
+    stroke-dasharray: 2, 2;
+    stroke-linejoin: round
+}
+
+#viz-nyc .fips_36047 {
+    fill: #EDBB99;
+    stroke: none
+}
+
+#viz-nyc .fips_36085 {
+    fill: #F9B3AE;
+    stroke: none
+}
+
+#viz-nyc .fips_36061 {
+    fill: #FFF1A5;
+    stroke: none
+}
+
+#viz-nyc .fips_36081 {
+    fill: #CAE6B3;
+    stroke: none
+}
+
+#viz-nyc .fips_36005 {
+    fill: #99D3E1;
+    stroke: none
+}
+
+#viz-nyc .county-label {
+    fill: #666;
+    /* fill-opacity: .8; */
+    font-size: 14px;
+    /* font-weight: 300; */
+    text-anchor: middle
+}
+
+#viz-nyc .other-label {
+    /* fill-opacity: .4; */
+    font-size: 14px;
+    text-anchor: start
+}
+
+#viz-nyc text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    pointer-events: none
+}
+
+#viz-world-cup svg {
+    border: 1px solid #ddd;
+    border-radius: 3px
+}
+
+#viz-world-cup .team {
+    fill: #fff
+}
+
+#countdown {
+    font: 54px Menlo
 }
