@@ -59,7 +59,7 @@ svg {
     stroke: none
 }
 
-#viz-nyc .fips_36005 {
+#viz-nyc .fips_{
     fill: #99D3E1;
     stroke: none
 }
